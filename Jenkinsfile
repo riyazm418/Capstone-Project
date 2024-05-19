@@ -39,7 +39,7 @@ pipeline {
       }
       steps {
         // Replace with your deployment commands (e.g., using SSH)
-        sh 'ssh riyaz@192.168.29.67 "docker-compose down && docker-compose -p dev up -d"'
+        sh './deploy.sh'
       }
     }
   }
