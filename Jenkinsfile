@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        GIT_URL = 'https://github.com/riyazm418/test-repo.git'
+        GIT_URL = 'https://github.com/riyazm418/riyaz123.git'
     }
     stages {
         stage('Clone Repository-main') {
@@ -59,4 +59,3 @@ pipeline {
         }
     }
 }
-
