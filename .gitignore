@@ -1,0 +1,13 @@
+devops-buildbackup.tar
+*.log
+*.logs
+*.temp
+.cache
+.parcel-cache
+.cache/
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.dockerignore
+
