@@ -5,7 +5,7 @@ echo $BRANCH_NAME
 if [ "$BRANCH_NAME" == "master" ]; then
   IMAGE_TAG="riyazm418/prod:devops-build-v1.0"
 else
-  IMAGE_TAG="riyazm418/dev:devops-build-v1.0"
+  IMAGE_TAG="riyazm418/dev:dev-v1"
 fi
 
 # echo "Building Docker image with tag ${IMAGE_TAG}..."
