@@ -17,8 +17,8 @@ pipeline {
         sh 'chmod +x build.sh'
         sh './build.sh' // Replace with your username
         sh 'docker login -u riyazm418 -p Rahila@100'
-        sh 'docker tag devops-build:v1.0 riyazm418/dev:devops-buil-v1.0'
-        sh 'docker push riyazm418/dev:devops-buil-dev'
+        sh 'docker tag devops-build:v1.0 riyazm418/dev:dev'
+        sh 'docker push riyazm418/dev:dev'
       }
     }
     stage('Build Docker Image (prod)') {
@@ -29,8 +29,8 @@ pipeline {
         sh 'chmod +x build.sh'
         sh './build.sh' // Credentials for prod repo
         sh 'docker login -u riyazm418 -p Rahila@100'
-        sh 'docker tag devops-build:v1.0 riyazm418/prod:devops-buil-v1.0'
-        sh 'docker push riyazm418/prod:devops-buil-prod
+        sh 'docker tag devops-build:v1.0 riyazm418/prod:prod'
+        sh 'docker push riyazm418/prod:prod'
       }
     }
     stage('Deploy Application (dev)') {
