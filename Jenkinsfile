@@ -33,16 +33,11 @@ pipeline {
         sh 'docker push riyazm418/prod:prod'
       }
     }
-    stage('Deploy Application (dev)') {
-      when {
-        branch 'dev'
-      }
+    stage('Deploy Application') {
       steps {
         // Replace with your deployment commands (e.g., using SSH)
         sh 'chmod +x build.sh'
         sh './deploy.sh'
-      }
-    }
   }
   post {
     success {
