@@ -33,9 +33,9 @@ pipeline {
         sh 'docker push riyazm418/prod:prod'
       }
     }
-    stage('Deploy Application (dev)') {
+    stage('Deploy Application (prod)') {
       when {
-        branch 'dev'
+        branch 'prod'
       }
       steps {
         // Replace with your deployment commands (e.g., using SSH)
