@@ -39,7 +39,7 @@ pipeline {
         sh 'chmod +x build.sh'
         sh './deploy.sh'
         }
-    }
+     }
   post {
     success {
       echo 'Pipeline completed successfully!'
