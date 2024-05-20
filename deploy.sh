@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh riyaz@192.168.29.67"docker-compose down && docker-compose -p dev up -d"
+docker-compose -f docker-compose.yml up -d
