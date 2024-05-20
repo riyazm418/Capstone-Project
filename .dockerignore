@@ -1,0 +1,16 @@
+.git
+.gitignore
+LICENSE
+VERSION
+*.md
+Changelog.md
+Makefile
+docker-compose.yml
+docsi
+Dockerfile
+devops-buildbackup.tar
+my_password.txt
+deploy.sh
+build.sh
+*.logs
+my_password.txt
