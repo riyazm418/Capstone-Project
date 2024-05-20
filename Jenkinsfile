@@ -38,7 +38,8 @@ pipeline {
         // Replace with your deployment commands (e.g., using SSH)
         sh 'chmod +x build.sh'
         sh './deploy.sh'
-  }
+        }
+    }
   post {
     success {
       echo 'Pipeline completed successfully!'
